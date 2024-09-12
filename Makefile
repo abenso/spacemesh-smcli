@@ -166,3 +166,7 @@ staticcheck: $(UNZIP_DEST)
 
 clean:
 	rm -rf $(UNZIP_DEST)
+
+include Makefile-libs.Inc
+all: go-env go-env-test
+.PHONY: all
